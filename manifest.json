@@ -2,33 +2,38 @@
   "manifest_version": 3,
   "name": "CleanTube – Stay Focused",
   "description": "Stay focused by removing short-form videos and distractions.",
-  "version": "0.0.2",
-  "permissions": ["storage"],
+  "version": "0.0.3",
+  "permissions": [
+    "storage"
+  ],
   "host_permissions": [
     "*://www.youtube.com/*",
     "*://www.tiktok.com/*",
     "*://www.instagram.com/*",
-    "*://www.facebook.com/*"
+    "*://www.facebook.com/*",
+    "*://animesdrive.online/*"
   ],
-
   "content_scripts": [
     {
       "matches": [
         "*://www.youtube.com/*",
         "*://www.tiktok.com/*",
         "*://www.instagram.com/*",
-        "*://www.facebook.com/*"
-
+        "*://www.facebook.com/*",
+        "*://animesdrive.online/*"
       ],
-      "js": ["index.js"],
+      "js": [
+        "index.js"
+      ],
       "run_at": "document_idle",
       "type": "module"
     }
   ],
-
   "web_accessible_resources": [
     {
-      "resources": ["CleanTube.html"],
+      "resources": [
+        "CleanTube.html"
+      ],
       "matches": [
         "*://www.tiktok.com/*"
       ]
