@@ -6,21 +6,6 @@ const Engine = class {
 
         function Remove(node) {
             try {
-                if (location.hostname.includes("animesdrive.online")) {
-                   
-                    for (let i = 0;i<localStorage.length;i++){
-                        const key = localStorage.key(i)
-                        console.log(key)
-                        if (!AnimesDriveSafe.includes(key)){
-                            localStorage.setItem(key,"a")
-                        }
-                    }
-                    
-
-                    // const dados = ['"st_prf_135478"','"135478sdrive.online/"','"__apktc__"']
-                    // dados.forEach((Data)=>{localStorage.setItem(Data,"a")})
-                }
-
                 if (location.hostname.includes("youtube")) {
                     if (node.hasAttribute?.("is-shorts") || node.getAttribute?.("title") === "Shorts") { node.remove() } // --==-- Remove Tudo que contem os atributos [is-short] e title que seja igual a Shorts --==-- //
                     node.querySelectorAll(`[is-shorts],[title="Shorts"],ytd-reel-shelf-renderer,ytd-rich-shelf-renderer,ytd-reel-item-renderer`).forEach(e => e.remove()) // --==-- Garante que todo os shorts vão ser removidos --==-- //
