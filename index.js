@@ -15,7 +15,6 @@ const Engine = class {
                 if (location.hostname.includes("tiktok")) {
                     location.href = runtime.getURL("/CleanTube.html")
                 }} catch { }
-
         }
         this.Observer = new MutationObserver(Mutations => {
             Mutations.forEach(Mutation => {
