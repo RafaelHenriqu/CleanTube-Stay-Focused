@@ -1,10 +1,5 @@
 # CleanTube – Stay Focused
 
-## PROJETO DESCONTINUADO
-```
-Projeto passado para outro desenvolvedor
-```
-
 **Versão:** 1
 **Plataforma:** Extensão para navegador (Firefox)
 
